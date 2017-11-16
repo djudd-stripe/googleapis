@@ -1,5 +1,5 @@
 proto_library(
-    name = "google_rpc_proto",
+    name = "proto",
     srcs = glob(["**/*.proto"]),
     deps = [
         "@com_google_protobuf//:any_proto",
