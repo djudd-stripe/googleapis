@@ -49,6 +49,13 @@ new_local_repository(
     path = "third_party/protobuf",
 )
 
+http_archive(
+    name = "com_google_protobuf",
+    urls = ["https://github.com/google/protobuf/archive/v3.5.0.tar.gz"],
+    sha256 = "0cc6607e2daa675101e9b7398a436f09167dffb8ca0489b0307ff7260498c13c",
+    strip_prefix = "protobuf-3.5.0",
+)
+
 # grpc
 bind(
     name = "grpc++",
